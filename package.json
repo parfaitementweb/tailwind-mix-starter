@@ -1,23 +1,22 @@
 {
   "scripts": {
     "dev": "npm run development",
-    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "watch": "npm run development -- --watch",
-    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "development": "mix",
+    "watch": "mix watch",
+    "watch-poll": "mix watch -- --watch-options-poll=1000",
+    "hot": "NODE_ENV=development mix watch --hot",
     "prod": "npm run production",
-    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
-  },
-  "dependencies": {
-    "autoprefixer": "^9.8.6"
+    "production": "mix --production"
   },
   "devDependencies": {
-    "@fullhuman/postcss-purgecss": "2.3.0",
-    "cross-env": "^7.0.2",
-    "cssnano": "^4.1.10",
-    "laravel-mix": "^5.0.5",
-    "laravel-mix-postcss-config": "^1.0.4",
-    "postcss-cli": "^7.1.2",
-    "postcss-nested": "^4.2.3",
-    "tailwindcss": "^1.8.5"
+    "@tailwindcss/forms": "^0.3.2",
+    "@tailwindcss/typography": "^0.4.0",
+    "autoprefixer": "^10.2.5",
+    "cross-env": "^7.0.0",
+    "laravel-mix": "^6.0.0",
+    "postcss": "^8.2.9",
+    "postcss-import": "^14.0.1",
+    "postcss-nested": "^5.0.0",
+    "tailwindcss": "^2.1.1"
   }
 }

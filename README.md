@@ -1,11 +1,11 @@
-# Tailwind CSS Laravel Mix Starter Project
+# Tailwind CSS Laravel Mix (PostCSS) Starter Project
 
 We use this as a starter template to quickly develop static HTML pages with :
-- TailwindCSS
-- Laravel Mix (Webpack)
+- TailwindCSS 2.1
+- Laravel Mix 6 (Webpack)
 - PostCSS
 - PostCSS Nested
-- PurgeCSS
+- PostCSS Import
 
 To get started, clone the project and install the dependencies:
 
