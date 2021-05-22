@@ -19,8 +19,6 @@ mix.options({
         require('postcss-nested'),
         require('autoprefixer'),
         require('tailwindcss'),
-        require('@tailwindcss/typography'),
-        require('@tailwindcss/forms'),
     ]
 });
 
